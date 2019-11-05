@@ -2,8 +2,8 @@
 Expansion board with UPS using supercaps and a special wadchdog/undervoltage detection
 
 ## Motivation
-I am running a Raspberry Pi in a holiday home. This device also  controls the heating of the water pipes in winter, so it is "mission critical". It also allows to remotly switch on the room heating via sms text messages. Regular status messages are also provided via sms. These functions have been implemented using the smart-home suite iobroker (https://www.iobroker.net/)
-Since the electricity grid is sometimes unreliable, a kind of power buffer is needed to have enough time to shut down everything in case of a power loss. Since I do not want to use the usual lithium ion battery based UPS available on the market; I was looking for an alternative and found this: https://www.hackerspace-ffm.de/wiki/index.php?title=Raspi_EDLC_UPS.
+I am running a Raspberry Pi in a holiday home. This device also  controls the heating of the water pipes in winter, so it is "mission critical". It also allows to remotly switch on the room heating via sms text messages. Regular status messages are also provided via sms. These functions have been implemented using the smart-home suite iobroker (https://www.iobroker.net/).
+Since the electricity grid is sometimes unreliable, a power buffer is needed to have enough time to shut down everything in case of a power loss. Since I do not want to use the usual lithium ion battery based UPS available on the market; I was looking for an alternative and found this: https://www.hackerspace-ffm.de/wiki/index.php?title=Raspi_EDLC_UPS.
 The supercaps provide enough energy to supply the raspi for 20 - 30 s which is enough for a safe shutdown. The status of the power supply is provided to one of the GPIO pins of the raspi. The status of this pin is monitored by an iobroker function and a system shutdown command is initiated if a power loss is detected.
 
 ## Requirements

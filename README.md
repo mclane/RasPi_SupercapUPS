@@ -37,3 +37,4 @@ I used VSCode and PlatformIO as development environment:
 - and upload using programmer
 For the prototype development, flashing of the Attiny was done outside of the circuit. An AVR Dragon debugger was used for initial flash programming. The appropriate platformio.ini file is provided here. 
 The steps to program the Attiny directly from the raspi can be found e.g. in https://www.instructables.com/id/Programming-the-ATtiny85-from-Raspberry-Pi/. Upload the .pio/build/attiny85/firmware.hex file to your Raspberry Pi from the development PC and flash this file using avrdude as described.
+The iobroker functionality is not provided here. Resetting of the watchdog timer can also be accomplished via a cron job directly.
